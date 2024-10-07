@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./App.css";
+import 
 
 function GenerateImage() {
   const [prompt, setPrompt] = useState("");
@@ -17,7 +18,7 @@ function GenerateImage() {
     try {
       const currentPrompt = searchPrompt || prompt;
       const response = await axios.post(
-        "https://imagegenerator-f8ii.vercel.app/",
+        "https://imagegenerator-whou.onrender.com/",
         // "http://localhost:5000/generate-image",
         {
           prompt: currentPrompt,
