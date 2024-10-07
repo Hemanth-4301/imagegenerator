@@ -17,7 +17,8 @@ function GenerateImage() {
     try {
       const currentPrompt = searchPrompt || prompt;
       const response = await axios.post(
-        "http://localhost:5000/generate-image",
+        "https://imagegenerator-f8ii.vercel.app/",
+        // "http://localhost:5000/generate-image",
         {
           prompt: currentPrompt,
         }
